@@ -1,0 +1,24 @@
+$(".btn-fachadas").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-cozinha").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-sala").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-varandas").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-quartos").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-banheiro").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-terrenos").click(function(){
+    $(this).addClass("visto");
+});
+$(".btn-comerciais").click(function(){
+    $(this).addClass("visto");
+});

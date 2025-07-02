@@ -1,0 +1,386 @@
+.bg-podcast p {
+    margin: 0;
+}
+
+.audio-player {
+    color: #000;
+    padding: 8px 20px;
+    max-width: 330px;
+}
+
+.audio-player .timestamp {
+    display: inline-block;
+    vertical-align: text-top;
+    font-weight: bold;
+    text-align: center;
+}
+
+.audio-player .btn-player {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    color: #00838D;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all .4s;
+}
+
+.audio-player .btn-player:hover {
+    transform: translateY(-3px);
+}
+
+.audio-player .btn-play {
+    background-image: url('../../assets/images/Play.svg');
+}
+
+.audio-player .btn-pause {
+    background-image: url('../../assets/images/Pause.svg');
+}
+
+.audio-player .btn-transcricao {
+    background-image: url('../../assets/images/Transcricao.svg');
+}
+
+.audio-player .btn-player:active,
+.audio-player .btn-player:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    border-radius: 100%;
+}
+
+.barra {
+    margin-bottom: 10px;
+}
+
+
+/*estilos da range do player*/
+.audio-player input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.audio-player input[type=range]:focus {
+    outline: none;
+}
+
+.audio-player input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    border-radius: 10px;
+}
+
+.audio-player input[type=range]::-webkit-slider-thumb {
+    border: 4px solid #fff;
+    height: 35px;
+    width: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -12px;
+}
+
+.audio-player input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    border-radius: 10px;
+}
+
+.audio-player input[type=range]::-moz-range-thumb {
+    border: 4px solid #fff;
+    height: 35px;
+    width: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -12px;
+}
+
+.audio-player input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.audio-player input[type=range]::-ms-fill-lower {
+    background: #004684;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.audio-player input[type=range]::-ms-fill-upper {
+    background: #004684;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+.audio-player input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 1px #000000;
+    border: 0px solid #000000;
+    height: 26px;
+    width: 9px;
+    border-radius: 1px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.audio-player input[type=range]:focus::-ms-fill-lower {
+    background: #004E52;
+}
+
+.audio-player input[type=range]:focus::-ms-fill-upper {
+    background: #004E52;
+}
+
+/*Transcrição de áudios dentro das modais*/
+.modal .bg-podcast>div::after {
+    display: none;
+}
+
+.modal .accordion-transcricao {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    padding-left: 30px;
+}
+
+/*Transcrição de áudios dentro das modais*/
+
+/*áudio*/
+.bg-podcast.audio::after,
+.bg-podcast.audio>div::after,
+.audio .audio-player::before,
+.audio .audio-player::after {
+    display: none;
+}
+
+.bg-podcast.audio {
+    width: 300px;
+    height: 155px;
+}
+
+.audio .audio-player {
+    margin: 0;
+}
+
+.bg-podcast {
+    position: relative;
+    z-index: 1;
+    /* a caixa fica acima do ::before */
+    background: #fff;
+    border-radius: 20px;
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    overflow: visible;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bg-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 100px auto;
+}
+
+.bg-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../images/circulo_ripado.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-box {
+    width: 265px;
+    height: 265px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-gradient {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-gradient img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* .img-gradient .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(146, 172, 206, 0.6) 0%, rgba(0, 70, 132, 0) 100%);
+    z-index: 1;
+} */
+.img-gradient .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.texto-img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    font-size: 1.2em;
+}
+
+.linha-divisoria {
+    width: 2px;
+    height: 200px;
+    background: linear-gradient(var(--cor-terciaria) 0%, var(--cor-secundaria) 100%);
+    margin: 0 23px;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.bg-wrapper.rotating::before {
+    animation: rotate 20s linear infinite;
+}
+
+
+.bg-audio::before {
+    content: '';
+    background: url('../images/circulo_ripado.svg') no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 27%;
+    margin-top: -3%;
+    z-index: -1;
+}
+
+
+.bg-podcast.audio {
+    background: #fff;
+    border-radius: 25px;
+    border-width: 4px;
+    border-style: solid;
+    margin: 50px auto;
+    min-height: 188px;
+    position: relative;
+    padding: 10px 20px;
+    border-color: var(--cor-primaria);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .modal .accordion-transcricao {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 840px) {}
+
+@media screen and (max-width: 700px) {
+
+    .bg-podcast {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        border-radius: 20px;
+        width: 300px;
+        height: 500px;
+        margin: 100px auto;
+        overflow: visible;
+    }
+
+    .conteudo {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .linha-divisoria {
+        display: none;
+    }
+
+    .audio-player {
+        color: #000;
+        padding: 40px 20px;
+        max-width: 330px;
+    }
+
+    .bg-audio::before {
+        right: 7%;
+        margin-top: -9%;
+        z-index: -1;
+    }
+
+}
