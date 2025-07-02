@@ -1,0 +1,9 @@
+$(".btn-fase01").click(function(){
+    $(".check-fase01").css("display","block");
+});
+$(".btn-fase02").click(function(){
+    $(".check-fase02").css("display","block");
+});
+$(".btn-fase03").click(function(){
+    $(".check-fase03").css("display","block");
+});
