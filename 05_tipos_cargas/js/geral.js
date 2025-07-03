@@ -1,27 +1,25 @@
-$(".btn-demanda").click(function(){
-    $(".check-demanda").css("display","block");
+$(".btn-classe01").click(function(){
+    $(".check-classe01").css("display","block");
 });
-$(".btn-aplicacao").click(function(){
-    $(".check-aplicacao").css("display","block");
+$(".btn-classe02").click(function(){
+    $(".check-classe02").css("display","block");
 });
-$(".btn-criticidade").click(function(){
-    $(".check-criticidade").css("display","block");
+$(".btn-classe03").click(function(){
+    $(".check-classe03").css("display","block");
 });
-$(".btn-perecibilidade").click(function(){
-    $(".check-perecibilidade").css("display","block");
+$(".btn-classe04").click(function(){
+    $(".check-classe04").css("display","block");
 });
-$(".btn-periculosidade").click(function(){
-    $(".check-periculosidade").css("display","block");
+$(".btn-classe05").click(function(){
+    $(".check-classe05").css("display","block");
 });
-$(".btn-fabricacao").click(function(){
-    $(".check-fabricacao").css("display","block");
+$(".btn-classe06").click(function(){
+    $(".check-classe06").css("display","block");
 });
-$(".btn-condicao").click(function(){
-    $(".check-condicao").css("display","block");
+$(".btn-classe07").click(function(){
+    $(".check-classe07").css("display","block");
 });
-$(".btn-movimentacao").click(function(){
-    $(".check-movimentacao").css("display","block");
-});
+
 
 $(".btn-aspecto01").click(function(){
     $(".check-aspecto01").css("display","block");

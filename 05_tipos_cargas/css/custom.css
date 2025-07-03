@@ -19,120 +19,126 @@ body{
     margin: 80px auto;
 }
 
-.painel-classificacoes{
+.painel-classes_risco{
     text-align: center;
     margin: 50px auto;
 }
-.painel-classificacoes button{
-    margin: 30px 25px;
-    width: 169px;
-    height: 170px;
+.painel-classes_risco button{
+    margin: 20px 40px;
+    width: 215px;
+    height: 229px;
     border: none;
     border-radius: 75% 75% 100% 100%;
     padding: 0;
     transition: all 0.3;
     background-size: cover;
 }
-.btn-demanda{background: url('../img/info1_btn1_demanda.png') no-repeat center;}
-.btn-aplicacao{background: url('../img/info1_btn2_aplicacao.png') no-repeat center;}
-.btn-criticidade{background: url('../img/info1_btn3_criticidade.png') no-repeat center;}
-.btn-perecibilidade{background: url('../img/info1_btn4_perecibilidade.png') no-repeat center;}
-.btn-periculosidade{background: url('../img/info1_btn5_periculosidade.png') no-repeat center;}
-.btn-fabricacao{background: url('../img/info1_btn6_fabricacao.png') no-repeat center;}
-.btn-condicao{background: url('../img/info1_btn7_condicao.png') no-repeat center;}
-.btn-movimentacao{background: url('../img/info1_btn8_movimentacao.png') no-repeat center;}
+.btn-classe01{background: url('../img/btn_1.png') no-repeat center;}
+.btn-classe02{background: url('../img/btn_2.png') no-repeat center;}
+.btn-classe03{background: url('../img/btn_3.png') no-repeat center;}
+.btn-classe04{background: url('../img/btn_4.png') no-repeat center;}
+.btn-classe05{background: url('../img/btn_5.png') no-repeat center;}
+.btn-classe06{background: url('../img/btn_6.png') no-repeat center;}
+.btn-classe07{background: url('../img/btn_7.png') no-repeat center;}
 
-.painel-classificacoes button span{
-    width: 200px;
-    margin-left: -16px;
-    margin-top: 140px;
+.painel-classes_risco button span{
+    width: 280px;
+    margin-left: -33px;
+    margin-top: 170px;
     display: block;
-    background: linear-gradient(to right, #91B2D4, #B4A1B5, #F68B8E);
-    color: #FFFFFF;
+    background: #FFFFFF;
+    color: #93abcd;
     font-size: 16px;
-    padding: 10px;
+    padding: 15px 10px;
+    border-radius: 60px;
 }
-.painel-classificacoes button:hover>span{
-    background: linear-gradient(to right, #91B2D4, #B4A1B5, #F68B8E);
+.painel-classes_risco button:hover>span{
+    background-color: #93abcd;
     color: #FFFFFF;
-    border-color: #FFFFFF;
 }
-.painel-classificacoes button span:hover{
-    background: linear-gradient(to right, #91B2D4, #B4A1B5, #F68B8E);
+.painel-classes_risco button span:hover{
+    background-color: #93abcd;
 }
 
-.img-check {
+.painel-classes_risco .img-check {
     width: 25px;
-    top: 130px;
-    right: -15px;
+    top: 165px;
+    right: -30px;
     position: absolute;
     display: none;
 }
 
+table.tabela-classes img{
+    max-width: 150px;
+}
 
-.painel-sistemas_etiquetas{
+
+.painel-armazenagem{
     text-align: center;
-    margin: 50px auto;
+    margin: 20px auto 60px auto;
 }
-.painel-sistemas_etiquetas button{
-    width: 150px;
-    margin: 10px;
-    background: linear-gradient(to right, #91B2D4, #B4A1B5, #F68B8E);
-    color: #333;
-}
-.painel-sistemas_etiquetas button:hover{
-    background: linear-gradient(to right, #91B2D4, #B4A1B5, #F68B8E);
-    color: #fff;
-    border-color: #fff;
-}
-
-
-.painel-aspectos{
-    text-align: center;
-    margin: 30px auto;
-}
-.painel-aspectos button{
-    margin: 40px;
-    width: 160px;
-    height: 149px;
+.painel-armazenagem button{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
     border: none;
-    border-radius: 70% 75% 100% 100%;
+    border-radius: 100%;
     padding: 0;
     transition: all 0.3;
     background-size: cover;
 }
-.btn-aspecto01{background: url('../img/info2_btn1.png') no-repeat center;}
-.btn-aspecto02{background: url('../img/info2_btn2.png') no-repeat center;}
-.btn-aspecto03{background: url('../img/info2_btn3.png') no-repeat center;}
-.btn-aspecto04{background: url('../img/info2_btn4.png') no-repeat center;}
-.btn-aspecto05{background: url('../img/info2_btn5.png') no-repeat center;}
+.btn-paletes{background: url('../img/btn2_1.png') no-repeat center;}
+.btn-conteineres{background: url('../img/btn2_2.png') no-repeat center;}
+.btn-pre_lingagem{background: url('../img/btn2_3.png') no-repeat center;}
 
-.painel-aspectos button span{
-    width: 200px;
-    margin-left: -20px;
-    margin-top: 120px;
+.painel-armazenagem button span{
+    width: 220px;
+    margin-left: -10px;
+    margin-top: 170px;
     display: block;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
+    color: #93abcd;
     font-size: 16px;
-    padding: 10px;
+    padding: 15px 10px;
+    border-radius: 60px;
 }
-.painel-aspectos button:hover{
-    box-shadow: none;
-}
-.painel-aspectos button:hover>span{
+.painel-armazenagem button:hover>span{
     background-color: #93abcd;
     color: #FFFFFF;
 }
-.painel-aspectos button span:hover{
-    
+.painel-armazenagem button span:hover{
+    background-color: #93abcd;
 }
 
-.painel-aspectos .img-check {
+.painel-armazenagem .img-check {
     width: 25px;
-    top: 110px;
-    right: -20px;
+    top: 165px;
+    right: -30px;
     position: absolute;
     display: none;
+}
+
+
+.espera-video{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 20px;
+    color: #fff;
+    height: 360px;
+    box-shadow: #333 5px 5px 6px;
+    background-color: #292929;
+    margin: 40px auto;
+    position: relative;
+    z-index: 5;
+}
+
+
+.img-final{
+    margin: 60px auto 10px auto;
+    display: block;
+    width: 100%;
+    max-width: 250px;
 }
 
 
@@ -142,5 +148,12 @@ body{
     }
     .divisoria{
         margin: 50px auto;
+    }
+
+}
+
+@media screen and (max-width: 770px){
+    .painel-armazenagem button{
+        margin: 40px;
     }
 }
