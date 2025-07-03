@@ -983,6 +983,9 @@ tbody td:first-child{border-left: 0;}
     margin: 10px auto;
 }
 
+.figure-caption{
+    font-size: 16px !important;
+}
 
 
 @media screen and (max-width: 1200px){
