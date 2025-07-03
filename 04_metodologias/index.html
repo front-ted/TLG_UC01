@@ -21,6 +21,21 @@
     <link rel="stylesheet" href="../print/print/print.css">
     <!-- Preloader -->
     <link rel="stylesheet" href="../assets/css/preloader.css">
+    <!-- Atividade de verdadeiro ou falso -->
+    <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+    <!--Atividade arrasta e solta-->
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/dragula.css">
+    <link rel="stylesheet" href="../assets/atividades/arrasta_solta/game-custom.css">
+    <!--Atividade relacionar colunas-->
+    <link rel="stylesheet" href="../assets/atividades/relacionar_colunas/relacionar-colunas.css">
+    <!--Atividade jogo da memória-->
+    <link rel="stylesheet" href="../assets/atividades/jogo_memoria/jogoMemoria.css">
+    <!--Atividade de pontuação-->
+    <link rel="stylesheet" href="../assets/atividades/atividade-pontuacao/custom.css">
+    <!--Atividade completa frase-->
+    <link rel="stylesheet" href="../assets/atividades/completa_frase/completa_frase.css">
+    <!--Atividade em formato de slides-->
+    <link rel="stylesheet" href="../assets/atividades/prova/style.css">
     <!-- Áudio customizado -->
     <link rel="stylesheet" href="../assets/css/player.css">
     <!-- Estilos do template -->
@@ -610,7 +625,7 @@
                     <h4>Indicadores de desempenho no recebimento</h4>
                     <p>Cada empresa deve elaborar os indicadores de acordo com suas necessidades particulares, e é preciso entender que nem todo indicador é apropriado para todas as organizações. Os indicadores de desempenho podem ser medidos de diversas maneiras: pelo desempenho, mensurando a agilidade dos processos; pelos custos, analisando os custos envolvidos nas etapas de recebimento dos materiais; e pela qualidade, verificando o nível de qualidade (ou a falta dela) nos processos internos. Estes são alguns exemplos de indicadores de desempenho no recebimento:</p>
                     <p class="no-print">Clique ou toque para visualizar o conteúdo.</p>
-                    <div class="accordion" id="accordion01">
+                    <div class="accordion mb-5" id="accordion01">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading01">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
@@ -766,150 +781,468 @@
                     <p>Os relatórios são ferramentas essenciais para a comunicação de informações e a tomada de decisões em diversas áreas, incluindo a logística. Eles podem variar em formato, conteúdo e objetivo, dependendo da finalidade para a qual são elaborados.</p>
                     <p>Na logística, os <b>relatórios podem ser classificados de diversas formas</b>, mas algumas das categorias mais comuns incluem as seguintes: </p>
                     <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
-                    <!--PAG 28-->
-                    <div class="d-none d-sm-block no-print" aria-hidden="true">
+                    <div class="d-none d-sm-block my-5 no-print" aria-hidden="true">
                         <ul class="nav nav-tabs" id="myTab" role="tablist" aria-hidden="true">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                    type="button" role="tab" aria-controls="home" aria-selected="true">Título 1</button>
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Por área de atuação</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Título 2</button>
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Por periodicidade</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                                    type="button" role="tab" aria-controls="contact" aria-selected="false">Título 3</button>
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Por nível de detalhamento</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="aba04-tab" data-bs-toggle="tab" data-bs-target="#aba04" type="button" role="tab" aria-controls="aba04" aria-selected="false">Outros tipos de relatórios</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                Texto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra,
-                                dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor.
-                                Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel,
-                                consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et
-                                ultrices.
+                                <ul class="marcador-padrao">
+                                    <li><b>Relatórios de estoque</b>: apresentam informações detalhadas sobre os níveis de estoque, as movimentações, a rotatividade e o valor dos produtos.</li>
+                                    <li><b>Relatórios de transporte</b>: monitoram o desempenho das operações de transporte, incluindo custos, prazos de entrega, rotas e indicadores de desempenho.</li>
+                                    <li><b>Relatórios de armazenagem</b>: fornecem dados sobre o uso do espaço físico do armazém, a localização dos produtos, a movimentação interna e os indicadores de eficiência.</li>
+                                    <li><b>Relatórios de fornecedores</b>: avaliam o desempenho dos fornecedores em termos de qualidade, prazo de entrega e custos.</li>
+                                    <li><b>Relatórios financeiros</b>: apresentam informações sobre os custos logísticos, as receitas geradas e os indicadores de rentabilidade.</li>
+                                </ul>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                Texto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra,
-                                dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor.
-                                Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel,
-                                consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et
-                                ultrices.
+                                <ul class="marcador-padrao">
+                                    <li><b>Relatórios diários</b>: apresentam informações sobre as operações do dia anterior, como movimentações de estoque, entregas e recebimentos.</li>
+                                    <li><b>Relatórios semanais</b>: resumem os principais indicadores de desempenho da semana, como produtividade, custos e níveis de serviço.</li>
+                                    <li><b>Relatórios mensais</b>: fornecem uma visão geral do desempenho da logística no mês, comparando os resultados com metas e padrões estabelecidos.</li>
+                                    <li><b>Relatórios anuais</b>: apresentam um resumo completo das atividades logísticas do ano, incluindo análises de tendências e projeções futuras.</li>
+                                </ul>
                             </div>
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                Texto 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra,
-                                dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor.
-                                Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel,
-                                consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et
-                                ultrices.
+                                <ul class="marcador-padrao">
+                                    <li><b>Relatórios gerenciais</b>: apresentam um resumo dos principais indicadores de desempenho, direcionados para a tomada de decisão estratégica.</li>
+                                    <li><b>Relatórios operacionais</b>: fornecem informações detalhadas sobre as operações diárias, como movimentações de estoque e processos internos.</li>
+                                    <li><b>Relatórios técnicos</b>: apresentam análises aprofundadas de dados e informações específicas, como estudos de caso e análises de causa raiz.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="aba04" role="tabpanel" aria-labelledby="aba04-tab">
+                                <ul class="marcador-padrao">
+                                    <li><b>Relatórios de desempenho</b>: avaliam a eficiência dos processos logísticos e a produtividade da equipe.</li>
+                                    <li><b>Relatórios de qualidade</b>: monitoram a qualidade dos produtos e identificam problemas.</li>
+                                    <li><b>Relatórios de conformidade</b>: verificam o cumprimento de normas e regulamentações.</li>
+                                    <li><b>Relatórios de sustentabilidade</b>: avaliam o impacto ambiental e social das operações logísticas.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="d-block d-sm-none" aria-hidden="true">
+                    <div class="d-block d-sm-none my-5 no-print" aria-hidden="true">
                         <div class="accordion" id="accordion2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                        Item 1
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        Por área de atuação
                                     </button>
                                 </h2>
-                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                                    data-bs-parent="#accordion2">
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                            tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare
-                                            pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus
-                                            non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem
-                                            consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices
-                                            ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <ul class="marcador-padrao">
+                                            <li><b>Relatórios de estoque</b>: apresentam informações detalhadas sobre os níveis de estoque, as movimentações, a rotatividade e o valor dos produtos.</li>
+                                            <li><b>Relatórios de transporte</b>: monitoram o desempenho das operações de transporte, incluindo custos, prazos de entrega, rotas e indicadores de desempenho.</li>
+                                            <li><b>Relatórios de armazenagem</b>: fornecem dados sobre o uso do espaço físico do armazém, a localização dos produtos, a movimentação interna e os indicadores de eficiência.</li>
+                                            <li><b>Relatórios de fornecedores</b>: avaliam o desempenho dos fornecedores em termos de qualidade, prazo de entrega e custos.</li>
+                                            <li><b>Relatórios financeiros</b>: apresentam informações sobre os custos logísticos, as receitas geradas e os indicadores de rentabilidade.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                        Item 2
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Por periodicidade
                                     </button>
                                 </h2>
-                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                                    data-bs-parent="#accordion2">
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                            tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare
-                                            pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus
-                                            non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem
-                                            consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices
-                                            ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <ul class="marcador-padrao">
+                                            <li><b>Relatórios diários</b>: apresentam informações sobre as operações do dia anterior, como movimentações de estoque, entregas e recebimentos.</li>
+                                            <li><b>Relatórios semanais</b>: resumem os principais indicadores de desempenho da semana, como produtividade, custos e níveis de serviço.</li>
+                                            <li><b>Relatórios mensais</b>: fornecem uma visão geral do desempenho da logística no mês, comparando os resultados com metas e padrões estabelecidos.</li>
+                                            <li><b>Relatórios anuais</b>: apresentam um resumo completo das atividades logísticas do ano, incluindo análises de tendências e projeções futuras.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                        Item 3
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Por nível de detalhamento
                                     </button>
                                 </h2>
-                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                                    data-bs-parent="#accordion2">
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion2">
                                     <div class="accordion-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl,
-                                            tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare
-                                            pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus
-                                            non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem
-                                            consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices
-                                            ornare. Donec gravida pharetra odio et ultrices.</p>
+                                        <ul class="marcador-padrao">
+                                            <li><b>Relatórios gerenciais</b>: apresentam um resumo dos principais indicadores de desempenho, direcionados para a tomada de decisão estratégica.</li>
+                                            <li><b>Relatórios operacionais</b>: fornecem informações detalhadas sobre as operações diárias, como movimentações de estoque e processos internos.</li>
+                                            <li><b>Relatórios técnicos</b>: apresentam análises aprofundadas de dados e informações específicas, como estudos de caso e análises de causa raiz.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        Outros tipos de relatórios
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <ul class="marcador-padrao">
+                                            <li><b>Relatórios de desempenho</b>: avaliam a eficiência dos processos logísticos e a produtividade da equipe.</li>
+                                            <li><b>Relatórios de qualidade</b>: monitoram a qualidade dos produtos e identificam problemas.</li>
+                                            <li><b>Relatórios de conformidade</b>: verificam o cumprimento de normas e regulamentações.</li>
+                                            <li><b>Relatórios de sustentabilidade</b>: avaliam o impacto ambiental e social das operações logísticas.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="acessivel visually-hidden no-print">
-                        <!-- Conteudo direto do painel de abas -->
+                    <div class="acessivel visually-hidden print">
+                        <h4>Por área de atuação</h4>
+                        <ul class="marcador-padrao">
+                            <li><b>Relatórios de estoque</b>: apresentam informações detalhadas sobre os níveis de estoque, as movimentações, a rotatividade e o valor dos produtos.</li>
+                            <li><b>Relatórios de transporte</b>: monitoram o desempenho das operações de transporte, incluindo custos, prazos de entrega, rotas e indicadores de desempenho.</li>
+                            <li><b>Relatórios de armazenagem</b>: fornecem dados sobre o uso do espaço físico do armazém, a localização dos produtos, a movimentação interna e os indicadores de eficiência.</li>
+                            <li><b>Relatórios de fornecedores</b>: avaliam o desempenho dos fornecedores em termos de qualidade, prazo de entrega e custos.</li>
+                            <li><b>Relatórios financeiros</b>: apresentam informações sobre os custos logísticos, as receitas geradas e os indicadores de rentabilidade.</li>
+                        </ul>
+                        <h4>Por periodicidade</h4>
+                        <ul class="marcador-padrao">
+                            <li><b>Relatórios diários</b>: apresentam informações sobre as operações do dia anterior, como movimentações de estoque, entregas e recebimentos.</li>
+                            <li><b>Relatórios semanais</b>: resumem os principais indicadores de desempenho da semana, como produtividade, custos e níveis de serviço.</li>
+                            <li><b>Relatórios mensais</b>: fornecem uma visão geral do desempenho da logística no mês, comparando os resultados com metas e padrões estabelecidos.</li>
+                            <li><b>Relatórios anuais</b>: apresentam um resumo completo das atividades logísticas do ano, incluindo análises de tendências e projeções futuras.</li>
+                        </ul>
+                        <h4>Por nível de detalhamento</h4>
+                        <ul class="marcador-padrao">
+                            <li><b>Relatórios gerenciais</b>: apresentam um resumo dos principais indicadores de desempenho, direcionados para a tomada de decisão estratégica.</li>
+                            <li><b>Relatórios operacionais</b>: fornecem informações detalhadas sobre as operações diárias, como movimentações de estoque e processos internos.</li>
+                            <li><b>Relatórios técnicos</b>: apresentam análises aprofundadas de dados e informações específicas, como estudos de caso e análises de causa raiz.</li>
+                        </ul>
+                        <h4>Outros tipos de relatórios</h4>
+                        <ul class="marcador-padrao">
+                            <li><b>Relatórios de desempenho</b>: avaliam a eficiência dos processos logísticos e a produtividade da equipe.</li>
+                            <li><b>Relatórios de qualidade</b>: monitoram a qualidade dos produtos e identificam problemas.</li>
+                            <li><b>Relatórios de conformidade</b>: verificam o cumprimento de normas e regulamentações.</li>
+                            <li><b>Relatórios de sustentabilidade</b>: avaliam o impacto ambiental e social das operações logísticas.</li>
+                        </ul>
                     </div>
-
-
-
-                    <figure class="my-5">
-                        <img src="img/figura_7.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Imagem">
-                        <a href="img/figura_7.png" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src="img/figura_7.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
-                        </a>
-                        <figcaption class="figure-caption text-center">
-                            aaaaaaaaa <br>
-                            aaaaaaaaa
-                        </figcaption>
-                        <p class="sr-only no-print">aaaaaaaaa</p>
-                    </figure>
-
+                    <p>A escolha do tipo de relatório dependerá dos objetivos da empresa e das necessidades específicas de cada área.</p>
                 </div>
 
                 <img src="img/div.png" class="img-fluid d-block mx-auto no-print divisoria">
                 
                 <div class="container">
                     <h3 id="titulo7">Como elaborar um relatório</h3>
-                    <p>aaaaaaaaaaa</p>
-                    
+                    <p>Para criar um relatório eficaz, é importante considerar alguns pontos principais, seguindo etapas específicas. Confira a seguir os aspectos essenciais que você deve abordar na elaboração do seu relatório:</p>
+                    <p class="no-print" aria-hidden="true">Clique ou toque para visualizar o conteúdo.</p>
+                    <div class="painel-aspectos no-print" aria-hidden="true">
+                        <button type="button" class="btn-aspecto01 hvr-grow-shadow" data-bs-toggle="modal" data-bs-target="#modal-aspecto01">
+                            <span class="botao">1. Planejamento</span>
+                            <img src="../assets/images/check.svg" class="img-check check-aspecto01">
+                        </button>
+                        <button type="button" class="btn-aspecto02 hvr-grow-shadow" data-bs-toggle="modal" data-bs-target="#modal-aspecto02">
+                            <span class="botao">2. Coleta de dados</span>
+                            <img src="../assets/images/check.svg" class="img-check check-aspecto02">
+                        </button>
+                        <button type="button" class="btn-aspecto03 hvr-grow-shadow" data-bs-toggle="modal" data-bs-target="#modal-aspecto03">
+                            <span class="botao">3. Estrutura do relatório</span>
+                            <img src="../assets/images/check.svg" class="img-check check-aspecto03">
+                        </button>
+                        <button type="button" class="btn-aspecto04 hvr-grow-shadow" data-bs-toggle="modal" data-bs-target="#modal-aspecto04">
+                            <span class="botao">4. Redação e revisão</span>
+                            <img src="../assets/images/check.svg" class="img-check check-aspecto04">
+                        </button>
+                        <button type="button" class="btn-aspecto05 hvr-grow-shadow" data-bs-toggle="modal" data-bs-target="#modal-aspecto05">
+                            <span class="botao">5. Formatação</span>
+                            <img src="../assets/images/check.svg" class="img-check check-aspecto05">
+                        </button>
+                    </div>
+                    <!--Modais-->
+                    <div class="modal fade" id="modal-aspecto01" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">1. Planejamento</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="marcador-padrao">
+                                        <li><b>Objetivo</b>: determine o propósito do relatório e o que você deseja alcançar.</li>
+                                        <li><b>Público-alvo</b>: identifique quem vai ler o relatório para ajustar o nível de detalhe e a linguagem.</li>
+                                    </ul>
 
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal-aspecto02" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">2. Coleta de dados</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="marcador-padrao">
+                                        <li><b>Fontes</b>: recolha informações relevantes de fontes confiáveis.</li>
+                                        <li><b>Dados</b>: organize os dados coletados de forma lógica e consistente.</li>
+                                    </ul>
 
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal-aspecto03" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">3. Estrutura do relatório</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="marcador-padrao">
+                                        <li><b>Capa</b>: inclua o título do relatório, seu nome, data e, se necessário, a instituição ou empresa.</li>
+                                        <li><b>Sumário</b>: forneça uma visão geral das seções do relatório.</li>
+                                        <li><b>Introdução</b>: apresente o objetivo do relatório, o escopo e a importância do estudo.</li>
+                                        <li><b>Metodologia</b>: explique os métodos usados para coletar e analisar os dados.</li>
+                                        <li><b>Resultados</b>: apresente os dados encontrados de forma clara e objetiva.</li>
+                                        <li><b>Análise</b>: interprete os resultados e discuta suas implicações.</li>
+                                        <li><b>Conclusão</b>: resuma os principais pontos e forneça recomendações, se aplicável.</li>
+                                        <li><b>Referências</b>: liste todas as fontes consultadas.</li>
+                                        <li><b>Anexos</b>: inclua qualquer material adicional relevante, como gráficos e tabelas.</li>
+                                    </ul>
 
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal-aspecto04" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">4. Redação e revisão</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="marcador-padrao">
+                                        <li><b>Clareza</b>: use uma linguagem clara e objetiva.</li>
+                                        <li><b>Coerência</b>: assegure-se de que o relatório flua logicamente de uma seção para outra.</li>
+                                        <li><b>Revisão</b>: revise o relatório para corrigir erros de gramática, ortografia e formatação.</li>
+                                    </ul>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal-aspecto05" tabindex="-1" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">5. Formatação</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="marcador-padrao">
+                                        <li><b>Consistência</b>: mantenha um formato uniforme em todo o documento.</li>
+                                        <li><b>Legibilidade</b>: use fontes e tamanhos de texto que facilitem a leitura.</li>
+                                        <li><b>Gráficos e tabelas</b>: utilize-os para ilustrar e esclarecer informações, se necessário.</li>
+                                    </ul>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="botao hvr-grow-shadow" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grafismo">
+                        <div class="destaque borda-colorida icone dica">
+                            <p><b>Dicas adicionais</b></p>
+                            <ul class="marcador-padrao">
+                                <li>Objetividade: mantenha o foco nas informações essenciais.</li>
+                                <li>Feedback: se possível, peça a alguém para revisar seu relatório antes da entrega.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Seguindo essas etapas, você conseguirá elaborar um relatório completo e bem estruturado. A seguir, veremos como garantir que o relatório seja coerente e coeso, aspectos essenciais para uma apresentação clara e eficaz.</p>
                     <figure class="my-5">
-                        <img src="img/figura_1.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Imagem">
-                        <a href="img/figura_1.png" target="_blank" class="img-zoom d-block d-md-none no-print">
-                            <img src="img/figura_1.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                        <img src="img/figura_7.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Imagem">
+                        <a href="img/figura_7.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/figura_7.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
                         </a>
                         <figcaption class="figure-caption text-center">
-                            aaaaaaaaa <br>
-                            aaaaaaaaa
+                            Exemplo de relatório  <br>
+                            Fonte: Senac EAD (2025)
                         </figcaption>
-                        <p class="sr-only no-print">aaaaaaaaa</p>
+                        <p class="sr-only no-print">Supermercado Bom Preço <br>Setembro/2024 <br>Relatório – Análise do Processo de Recebimento <br>Objetivo: <br>Este relatório tem como escopo a análise do processo de recebimento de mercadorias na empresa Supermercado Bom Preço, destacando a importância de um fluxo eficiente para a manutenção da cadeia de suprimentos. <br>Resultados: <br>Identificou-se um aumento de 15% no tempo médio de processamento de recebimento devido à falta de padronização nos procedimentos. <br>A taxa de erro de recebimento foi de 2%, principalmente devido a falhas na conferência manual. <br>Metodologia: <br>A coleta de dados foi realizada por meio de consultas ao sistema WMS, entrevistas com os colaboradores e observação direta dos processos em duas semanas de operação. <br>Análise: <br>A falta de padronização e treinamento adequado contribui para o aumento do tempo de processamento e erros, impactando negativamente o fluxo logístico. <br>Conclusão: <br>Sugere-se a implementação de procedimentos padronizados e treinamentos regulares para a equipe de recebimento, visando à redução de erros e à otimização do tempo de processamento. <br>Nome: João Silva <br>Data: 15 de setembro de 2024 <br>Referências <br>WMS Supermercado Bom Preço : Relatórios de Recebimento, Julho 2024. <br>Entrevistas com colaboradores, Agosto 2024.</p>
                     </figure>
+                    <p><b>Coerência e coesão</b></p>
+                    <p>Sempre que há uma solicitação para a redação de um texto, é comum surgirem diversas. Contudo, é fundamental que as frases não estejam desconexas; o texto precisa ter um sentido. Desse modo, para a elaboração de um bom relatório, é fundamental compreender que, para um texto ter sentido, ele requer conexões gramaticais e articulação de ideias, ou seja, ele precisa apresentar coesão e coerência textuais.</p>
+                    <div class="grafismo">
+                        <div class="destaque gradiente icone pergunta">
+                            <p><b>Quais são as palavras que apresentam articulações gramaticais?</b></p>
+                        </div>
+                    </div>
+                    <p>A articulação de ideias em um texto é fundamental para a coesão e a coerência. Ela é realizada por meio de conectores gramaticais, como conjunções e preposições, que estabelecem as relações entre os termos e as orações. Outras classes de palavras, como substantivos e pronomes, também contribuem significativamente para a fluidez e o sentido do texto, evitando repetições e garantindo a progressão das ideias. Além desses, expressões como "como isso", "então", "aliás", "também", "isto é", "entretanto", "e", "por isso", "daí", "porém", "mas", entre outras, são frequentemente utilizadas para ligar ideias e segmentos do discurso, reforçando a coerência textual.</p>
+                    <figure class="my-5">
+                        <img src="img/figura_8.png" class="img-fluid mx-auto p-2 mb-3 d-none d-md-block radius print" alt="Imagem">
+                        <a href="img/figura_8.png" target="_blank" class="img-zoom d-block d-md-none no-print">
+                            <img src="img/figura_8.png" class="img-fluid mx-auto p-2 mb-3 radius" alt="Imagem">
+                        </a>
+                        <figcaption class="figure-caption text-center">
+                            Definições de coesão e coerência <br>
+                            Fonte: Cereja e Magalhães (2009)
+                        </figcaption>
+                        <p class="sr-only no-print">A imagem contém um texto em português com o título "Para lembrar". O conteúdo aborda dois conceitos. Coesão textual: refere-se às conexões gramaticais existentes entre palavras, orações, frases, parágrafos e partes maiores de um texto. Coerência textual: relaciona-se à estruturação lógico-semântica de um texto, ou seja, à articulação de ideias que faz com que, em uma situação discursiva, palavras e frases componham um todo significativo para os interlocutores.</p>
+                    </figure>
+                    <div class="no-print" aria-hidden="true">
+                        <div class="box-atividade">
+                            <p class="titulo-ativ"><strong>Que tal testar seus conhecimentos com um <i>quiz</i>?</strong></p>
+                            
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Qual é a definição correta de "codificação de produtos"?</p>
+                                <button class="alt-e">Um processo de identificação visual de produtos por meio de cores</button>
+                                <button class="alt-c">A atribuição de um código alfanumérico a um produto para facilitar sua rastreabilidade e gestão.</button>
+                                <button class="alt-e">Um sistema de agrupamento de produtos com base em seu valor de mercado.</button>
+                                <button class="alt-e">O uso de etiquetas RFID para controlar o estoque.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">O que significa EAN no contexto da codificação de produtos?</p>
+                                <button class="alt-c">European article number</button>
+                                <button class="alt-e">Electronic article number</button>
+                                <button class="alt-e">Environmental application number</button>
+                                <button class="alt-e">Economic allocation number</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Qual dos seguintes conceitos é um benefício da codificação de produtos?</p>
+                                <button class="alt-e">Aumento do tempo de <i>check-out</i> no ponto de venda. </button>
+                                <button class="alt-e">Redução na precisão do controle de estoque. </button>
+                                <button class="alt-c">Melhoria na rastreabilidade de produtos ao longo da cadeia de suprimentos.</button>
+                                <button class="alt-e">Necessidade de mais funcionários para gerenciar o inventário.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Qual é a principal vantagem do uso de QR <i>codes</i> em comparação com códigos de barras tradicionais?</p>
+                                <button class="alt-e">QR <i>codes</i> ocupam mais espaço nas embalagens.</button>
+                                <button class="alt-e">QR <i>codes</i> não podem armazenar tanta informação quanto códigos de barras. </button>
+                                <button class="alt-c">QR <i>codes</i> podem armazenar informações bidimensionais, permitindo maior conteúdo e flexibilidade de uso.</button>
+                                <button class="alt-e">É mais caro implementar QR <i>codes</i> do que códigos de barras.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Qual dos seguintes recursos NÃO faz parte dos tipos de codificação de produtos mencionados neste conhecimento?</p>
+                                <button class="alt-e">EAN</button>
+                                <button class="alt-e">UPC</button>
+                                <button class="alt-c">NCM</button>
+                                <button class="alt-e">QR <i>code</i></button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">O que são indicadores de desempenho?</p>
+                                <button class="alt-e">São ferramentas que medem a produtividade de um funcionário individualmente.</button>
+                                <button class="alt-e">São medidas qualitativas que permitem avaliar a qualidade de um produto ou processo.</button>
+                                <button class="alt-c">São medidas quantitativas que permitem a mensuração da evolução de características relevantes para determinar o nível de qualidade em um produto ou processo.</button>
+                                <button class="alt-e">São métricas utilizadas exclusivamente para avaliar o desempenho financeiro de uma empresa.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Qual dos seguintes indicadores é utilizado para avaliar o desempenho no recebimento de mercadorias?</p>
+                                <button class="alt-e">Índice de avarias na produção.</button>
+                                <button class="alt-c">Índice de precisão na separação.</button>
+                                <button class="alt-e">Percentual de entregas com atraso.</button>
+                                <button class="alt-e">Tempo de espera para resolução de problemas.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">O que representa o índice de produtividade na separação?</p>
+                                <button class="alt-e">A velocidade com que os produtos são separados e entregues aos clientes.</button>
+                                <button class="alt-e">A quantidade de erros cometidos durante a separação dos produtos.</button>
+                                <button class="alt-c">O tempo necessário para separar e preparar os produtos para envio.</button>
+                                <button class="alt-e">A quantidade de produtos separados por hora.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">Como se caracteriza o índice de precisão no recebimento?</p>
+                                <button class="alt-e">Pela velocidade de recebimento das mercadorias.</button>
+                                <button class="alt-e">Pela quantidade de mercadorias recebidas sem avarias.</button>
+                                <button class="alt-c">Pelo percentual de erros e avarias no processo de recebimento.</button>
+                                <button class="alt-e">Pelo custo total envolvido no processo de recebimento.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">O que é o ciclo PDCA?</p>
+                                <button class="alt-e">Uma ferramenta utilizada para medir a qualidade dos produtos.</button>
+                                <button class="alt-c">Um ciclo de quatro fases (planejar, fazer, checar, agir) utilizado para melhoria contínua de processos.</button>
+                                <button class="alt-e">Um processo para identificar os erros na produção.</button>
+                                <button class="alt-e">Um indicador de desempenho financeiro.</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
 
                 </div>
 
@@ -923,12 +1256,13 @@
                 </div>
             </div>
         </section>
-        <!-- Paginação-->
+        <!-- Paginação
         <footer class="text-center no-print d-flex justify-content-center mx-auto">
             <ul class="pagination">
 
             </ul>
         </footer>
+        -->
     </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -941,6 +1275,21 @@
     <!--Prog'n'roll - barra de progresso conforme rola a página-->
     <script src="../assets/js/prognroll.min.js"></script>
     <script src="../print/print/template.config.js"></script>
+    <!--Atividade de verdadeiro ou falso-->
+    <script src="../assets/atividades/perguntas/perguntas.js"></script>
+    <!--Atividade de jogo da memória-->
+    <script src="../assets/atividades/jogo_memoria/jogoMemoria.js"></script>
+    <!--Atividade arrasta e solta-->
+    <script src='../assets/atividades/arrasta_solta/dragula.min.js'></script>
+    <script src="../assets/atividades/arrasta_solta/game-custom.js"></script>
+    <!--Atividade associar colunas-->
+    <script src="../assets/atividades/relacionar_colunas/relacionar-colunas.js"></script>
+    <!--Atividade pontuação-->
+    <script src="../assets/atividades/atividade-pontuacao/atividade-pontuacao.js"></script>
+    <!--Atividade completa frase-->
+    <script src="../assets/atividades/completa_frase/completa_frase.js"></script>
+    <!--Atividade em formato de slides-->
+    <script src="../assets/atividades/prova/js.js"></script>
     <!--Scripts gerais-->
     <script src="../assets/js/geral.js"></script>
     <script src="js/geral.js"></script>

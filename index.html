@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="tela_inicial/default/css/style.css" />
   <script language="javascript">
 
-    var uc = "TLGUC0" // aqui vai a sigla do curso e o numero da uc
+    var uc = "TLGUC01" // aqui vai a sigla do curso e o numero da uc
   </script>
   <!--[if gte mso 9
       ]><xml>
@@ -108,7 +108,7 @@
       <div class="row justify-content-between">
         <div class="col-11">
           <h1>Técnico em Logística</h1>
-          <h2 class="my-3">Título da UC</h2>
+          <h2 class="my-3">Realizar procedimentos de conferência de equipamentos, materiais e produtos no processo logístico</h2>
         </div>
         <div class="col-1">
           <img src="tela_inicial/assets/logo_senac_2.png" class="logo-senac"/>
@@ -137,18 +137,18 @@
                           que deve ser aberto no print, por exemplo:
                           <a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos" data-imgpath="img" data-startpoint="teste.html">Recursos básicos</a>
                       -->
-              <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos">Recursos
-                  básicos</a></li>
-              <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_atividades">Atividades</a></li>
-              <li><a class="dropdown-item imprimir" href="#" data-conteudo="03_menu_lateral">Menu lateral
-                  ancorado</a></li>
-              <li><a class="dropdown-item imprimir" href="#" data-conteudo="04_blocado">Template blocado</a></li>
-              <li><a class="dropdown-item imprimir" href="#" data-conteudo="05_fundo_escuro">Template com
-                  background</a></li>
-              <!-- <li role="separator" class="divider"></li>
-                      <li><h6 class="dropdown-header">Semana 2</h6></li>
-                      <li><a class="dropdown-item" href="#">...</a></li> -->
-              <li role="separator" class="divider"></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_planejamento_carreira">Planejamento de carreira; cargos/ocupações/organograma dos envolvidos nas operações de movimentação de carga; e definição de logística e da cadeia de suprimentos </a></li>
+              <li><h6 class="dropdown-header">Semana 2</h6></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_tipos_documentos">Tipos de documentos e procedimentos de arquivo e protocolo </a></li>
+              <li><h6 class="dropdown-header">Semana 3</h6></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="03_fases_recebimento">Fases do recebimento de equipamentos, materiais e produtos; sistema de informação no controle de entrada e saída de cargas; e procedimento de devolução</a></li>
+              <li><h6 class="dropdown-header">Semana 4</h6></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="04_metodologias">Metodologias de codificação e classificação de equipamentos, materiais e produtos; sistemas e tipos de etiquetas; produção de relatório e interpretação de textos; e indicadores de desempenho de recebimento</a></li>
+              <li><h6 class="dropdown-header">Semana 5</h6></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="05_tipos_cargas">Tipos de cargas e classificação International Maritime Dangerous Goods (IMDG); tipos e funções de embalagens; desunitização do recebimento de cargas e unitização (paletização, entre outras formas) para armazenagem</a></li>
+              <li><h6 class="dropdown-header">Semana 6</h6></li>
+              <li><a class="dropdown-item imprimir" href="#" data-conteudo="06_equipamentos_facilitadores">Equipamentos facilitadores das operações logísticas para carga e descarga; Equipamentos de Proteção Individual (EPIs) e Equipamentos de Proteção Coletiva (EPCs)</a></li>
+              <li role="separator" class="divider"><hr></li>
               <li><a class="dropdown-item imprimir" href="#" data-conteudo="referencias">Referências</a></li>
             </ul>
           </div>
@@ -159,9 +159,9 @@
 
   <div class="container grupos">
     <!-- 
-			Uma div grupo contém os links de conteúdos de uma semana na UC, caso o curso
-		tenha mais semanas, basta criar uma nova estrutura de grupo colocando um novo id (grupo6, por exemplo), se tiver menos semanas, basta excluir os grupos excedentes 
-	     -->
+            Uma div grupo contém os links de conteúdos de uma semana na UC, caso o curso
+        tenha mais semanas, basta criar uma nova estrutura de grupo colocando um novo id (grupo6, por exemplo), se tiver menos semanas, basta excluir os grupos excedentes 
+         -->
 
     <!-- grupo 1 -->
     <div class="row">
@@ -171,159 +171,303 @@
     </div>
 
     <div class="row grupo" data-group="grupo1">
-      <h3 class="d-block d-lg-none">A fazer</h3>
-      <div class="col-12 col-lg-4 drag-column">
-        <h3 class="d-none d-lg-block">A fazer</h3>
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
 
-        <ul class="drag-inner-list" id="1" data-index="lista-fazer">
-          <!--
-						exemplo de conteúdo em uma semana, cada link de conteúdo é um li
-					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
-				     -->
-          <li class="drag-item fazer" data-item="link1" data-bs-toggle="tooltip" data-placement="top">
+            <ul class="drag-inner-list" id="1" data-index="lista-fazer">
 
-            <a href="01_recursos_basicos/index.html" target="_blank" class="link">Recursos básicos</a>
+                <li class="drag-item fazer" data-item="link1" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="01_planejamento_carreira/index.html" target="_blank" class="link">Planejamento de carreira; cargos/ocupações/organograma dos envolvidos nas operações de movimentação de carga; e definição de logística e da cadeia de suprimentos </a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="01_planejamento_carreira">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
 
-            <button class="btPrint imprimir" title="Imprimir o conteúdo"
-              data-conteudo="01_recursos_basicos">Imprimir</button>
-            <div class="dropdown dropdown-bubble">
-              <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                Mover para:
-                <li class="mover-fazer">A fazer</li>
-                <li class="mover-fazendo">Sendo feito</li>
-                <li class="mover-feito">Feito</li>
-              </ul>
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
             </div>
-          </li>
-          <li class="drag-item fazer" data-item="link2" data-bs-toggle="tooltip" data-placement="top">
-            <a href="02_atividades/index.html" target="_blank" class="link">Atividades</a>
-            <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="02_atividades">Imprimir</button>
-            <div class="dropdown dropdown-bubble">
-              <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                Mover para:
-                <li class="mover-fazer">A fazer</li>
-                <li class="mover-fazendo">Sendo feito</li>
-                <li class="mover-feito">Feito</li>
-              </ul>
-            </div>
-          </li>
-          <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
-            <a href="03_menu_lateral/index.html" target="_blank" class="link">Menu lateral ancorado</a>
-            <button class="btPrint imprimir" title="Imprimir o conteúdo"
-              data-conteudo="03_menu_lateral">Imprimir</button>
-            <div class="dropdown dropdown-bubble">
-              <a id="dLabel" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-display="static"
-                aria-expanded="false">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                Mover para:
-                <li class="mover-fazer">A fazer</li>
-                <li class="mover-fazendo">Sendo feito</li>
-                <li class="mover-feito">Feito</li>
-              </ul>
-            </div>
-          </li>
-          <!-- <li class="drag-item fazer" data-item="link4" data-bs-toggle="tooltip" data-placement="top">
-            <a href="05_fundo_escuro/index.html" target="_blank" class="link">Template com background</a>
-            <button class="btPrint imprimir" title="Imprimir o conteúdo"
-              data-conteudo="05_fundo_escuro">Imprimir</button>
-            <div class="dropdown dropdown-bubble">
-              <a id="dLabel" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-display="static"
-                aria-expanded="false">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                Mover para:
-                <li class="mover-fazer">A fazer</li>
-                <li class="mover-fazendo">Sendo feito</li>
-                <li class="mover-feito">Feito</li>
-              </ul>
-            </div>
-          </li> -->
-          <!-- <li class="drag-item fazer" data-item="link5" data-bs-toggle="tooltip" data-placement="top">
-            <a href="06_experimentacao/index.html" target="_blank" class="link">Recursos experimentação</a>
-            <button class="btPrint imprimir" title="Imprimir o conteúdo"
-              data-conteudo="05_fundo_escuro">Imprimir</button>
-            <div class="dropdown dropdown-bubble">
-              <a id="dLabel" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-display="static"
-                aria-expanded="false">
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                Mover para:
-                <li class="mover-fazer">A fazer</li>
-                <li class="mover-fazendo">Sendo feito</li>
-                <li class="mover-feito">Feito</li>
-              </ul>
-            </div>
-          </li> -->
-        </ul>
-        <div class="mao">
-          <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
         </div>
-      </div>
 
-      <h3 class="d-block d-lg-none">Sendo feito</h3>
-      <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
-        <h3 class="d-none d-lg-block">Sendo feito</h3>
-        <ul class="drag-inner-list" id="2" data-index="lista-fazendo"></ul>
-      </div>
-      <h3 class="d-block d-lg-none">Feito</h3>
-      <div class="col-12 col-lg-4 drag-column">
-        <h3 class="d-none d-lg-block">Feito</h3>
-        <div class="setinha"></div>
-        <div class="exemplo"></div>
-        <ul class="drag-inner-list" id="3" data-index="lista-feito"></ul>
-      </div>
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="2" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="3" data-index="lista-feito"></ul>
+        </div>
     </div>
     <!-- grupo 1 -->
 
     <!-- grupo 2 -->
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-lg-12">
-          <h2>2ª Semana</h2>
+            <h2>2ª Semana</h2>
         </div>
-      </div>
+    </div>
 
-      <div class="row grupo" data-group="grupo1">
-        <h3 class="hidden-lg hidden-md">A Fazer</h3>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
-          <h3 class="visible-lg visible-md">A FAZER</h3>
+    <div class="row grupo" data-group="grupo2">
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
 
-          <ul class="drag-inner-list" id="1" data-index="lista-fazer">
-            
-            
-          </ul>
-          <div class="mao">
-            <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
-          </div>
+            <ul class="drag-inner-list" id="4" data-index="lista-fazer">
+
+                <li class="drag-item fazer" data-item="link2" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="02_tipos_documentos/index.html" target="_blank" class="link">Tipos de documentos e procedimentos de arquivo e protocolo </a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="02_tipos_documentos">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+            </div>
         </div>
 
-        <h3 class="hidden-lg hidden-md">SENDO FEITO</h3>
-        <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress"
-        >
-          <h3 class="visible-lg visible-md">SENDO FEITO</h3>
-          <ul class="drag-inner-list" id="2" data-index="lista-fazendo"></ul>
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="5" data-index="lista-fazendo"></ul>
         </div>
-        <h3 class="hidden-lg hidden-md">FEITO</h3>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
-          <h3 class="visible-lg visible-md">FEITO</h3>
-          <div class="setinha"></div>
-          <div class="exemplo"></div>
-          <ul class="drag-inner-list" id="3" data-index="lista-feito"></ul>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="6" data-index="lista-feito"></ul>
         </div>
-      </div> -->
+    </div>
     <!-- grupo 2 -->
+
+    <!-- grupo 3 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>3ª Semana</h2>
+        </div>
+    </div>
+
+    <div class="row grupo" data-group="grupo3">
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
+
+            <ul class="drag-inner-list" id="7" data-index="lista-fazer">
+
+                <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="03_fases_recebimento/index.html" target="_blank" class="link">Fases do recebimento de equipamentos, materiais e produtos; sistema de informação no controle de entrada e saída de cargas; e procedimento de devolução</a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="03_fases_recebimento">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="8" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="9" data-index="lista-feito"></ul>
+        </div>
+    </div>
+    <!-- grupo 3 -->
+
+    <!-- grupo 4 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>4ª Semana</h2>
+        </div>
+    </div>
+
+    <div class="row grupo" data-group="grupo4">
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
+
+            <ul class="drag-inner-list" id="10" data-index="lista-fazer">
+
+                <li class="drag-item fazer" data-item="link4" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="04_metodologias/index.html" target="_blank" class="link">Metodologias de codificação e classificação de equipamentos, materiais e produtos; sistemas e tipos de etiquetas; produção de relatório e interpretação de textos; e indicadores de desempenho de recebimento</a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="04_metodologias">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="11" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="12" data-index="lista-feito"></ul>
+        </div>
+    </div>
+    <!-- grupo 4 -->
+
+    <!-- grupo 5 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>5ª Semana</h2>
+        </div>
+    </div>
+
+    <div class="row grupo" data-group="grupo5">
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
+
+            <ul class="drag-inner-list" id="13" data-index="lista-fazer">
+
+                <li class="drag-item fazer" data-item="link5" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="05_tipos_cargas/index.html" target="_blank" class="link">Tipos de cargas e classificação International Maritime Dangerous Goods (IMDG); tipos e funções de embalagens; desunitização do recebimento de cargas e unitização (paletização, entre outras formas) para armazenagem</a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="05_tipos_cargas">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="14" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="15" data-index="lista-feito"></ul>
+        </div>
+    </div>
+    <!-- grupo 5 -->
+
+    <!-- grupo 6 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>6ª Semana</h2>
+        </div>
+    </div>
+
+    <div class="row grupo" data-group="grupo6">
+        <h3 class="d-block d-lg-none">A fazer</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">A fazer</h3>
+
+            <ul class="drag-inner-list" id="16" data-index="lista-fazer">
+
+                <li class="drag-item fazer" data-item="link6" data-bs-toggle="tooltip" data-placement="top">
+                    <a href="06_equipamentos_facilitadores/index.html" target="_blank" class="link">Equipamentos facilitadores das operações logísticas para carga e descarga; Equipamentos de Proteção Individual (EPIs) e Equipamentos de Proteção Coletiva (EPCs)</a>
+                    <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="06_equipamentos_facilitadores">Imprimir</button>
+                    <div class="dropdown dropdown-bubble">
+                        <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                            Mover para:
+                            <li class="mover-fazer">A fazer</li>
+                            <li class="mover-fazendo">Sendo feito</li>
+                            <li class="mover-feito">Feito</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="mao">
+                <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <h3 class="d-block d-lg-none">Sendo feito</h3>
+        <div class="col-12 col-lg-4 drag-column drag-column-in-progress">
+            <h3 class="d-none d-lg-block">Sendo feito</h3>
+            <ul class="drag-inner-list" id="17" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="d-block d-lg-none">Feito</h3>
+        <div class="col-12 col-lg-4 drag-column">
+            <h3 class="d-none d-lg-block">Feito</h3>
+            <div class="setinha"></div>
+            <div class="exemplo"></div>
+            <ul class="drag-inner-list" id="18" data-index="lista-feito"></ul>
+        </div>
+    </div>
+    <!-- grupo 6 -->
 
 
     <div class="d-flex justify-content-between">

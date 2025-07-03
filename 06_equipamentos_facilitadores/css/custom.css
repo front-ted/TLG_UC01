@@ -1,0 +1,249 @@
+
+
+.bg-img_verde{
+    background: url('../img/background_inicio.jpg') no-repeat center;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+.bg-img_verde *{
+    color: #FFFFFF;
+}
+
+.bg-gradiente_azul{
+    background: linear-gradient(135deg, #ffffff 0%, #c0d8f5 100%);
+    padding-bottom: 60px;
+}
+.bg-gradiente_azul_01{
+    background: url("../img/elemento_lateral_esquerda.png") no-repeat left 0px bottom 30% / 16%,
+                linear-gradient(135deg, #ffffff 0%, #c0d8f5 100%);
+    padding-bottom: 60px;
+}
+.bg-gradiente_azul_02{
+    background: url("../img/elemento_lateral_direita.png") no-repeat right 0px bottom 35% / 16%,
+                linear-gradient(135deg, #ffffff 0%, #c0d8f5 100%);
+    padding-bottom: 60px;
+}
+.bg-gradiente_azul_03{
+    background: url("../img/elemento_lateral_esquerda.png") no-repeat left 0px top 15% / 16%,
+                url("../img/elemento_lateral_direita.png") no-repeat right 0px bottom 15% / 16%,
+                linear-gradient(135deg, #ffffff 0%, #c0d8f5 100%);
+    padding-bottom: 60px;
+}
+
+.bg-verde{
+    background-color: #496972;
+    padding-bottom: 60px;
+}
+.bg-verde h3, .bg-verde h4, .bg-verde p, .bg-verde li, .bg-verde    {
+    color: #fff !important;
+}
+
+.modal-body p{
+    color: #333 !important;
+}
+.modal-body .figure-caption{
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.bloco.bg-imagem{
+    width: 100%;
+    min-height: 440px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px auto;
+}
+.divisoria_1{background: url('../img/paralaxe_1.jpg') no-repeat center;}
+.divisoria_2{background: url('../img/paralaxe_2.jpg') no-repeat center;}
+.divisoria_3{background: url('../img/paralaxe_3.jpg') no-repeat center;}
+.divisoria_4{background: url('../img/paralaxe_4.jpg') no-repeat center;}
+.divisoria_5{background: url('../img/paralaxe_5.jpg') no-repeat center;}
+.divisoria_6{background: url('../img/paralaxe_6.jpg') no-repeat center;}
+.divisoria_7{background: url('../img/paralaxe_7.jpg') no-repeat center;}
+
+.bloco-final{
+    margin-bottom: -15px;
+    padding-bottom: 80px;
+}
+
+
+.painel-normas{
+    text-align: center;
+    margin: 50px auto;
+}
+.painel-normas button{
+    margin: 15px;
+    width: 184px;
+    height: 200px;
+    border: none;
+    border-radius: 40% 40% 44% 44%;
+    padding: 0;
+    transition: all 0.3;
+    background: url('../img/btn_nbr.png') no-repeat center;
+    background-size: cover;
+}
+.painel-normas button span{
+    width: 160px;
+    margin-left: 12px;
+    margin-top: 165px;
+    display: block;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px;
+}
+.painel-normas button:hover{
+    box-shadow: none;
+}
+.painel-normas button:hover>span{
+    background-color: #93abcd;
+    color: #FFFFFF;
+}
+.painel-normas button span:hover{
+    
+}
+
+.painel-normas .img-check {
+    width: 30px;
+    top: 155px;
+    right: 5px;
+    position: absolute;
+    display: none;
+}
+
+.painel-EPIs{
+    margin: 50px auto;
+    position: relative;
+    width: 700px;
+    height: 530px;
+    text-align: center;
+    background: url('../img/painel_clicavel_1.png') no-repeat center;
+}
+.painel-EPIs button{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: none;
+    margin: 18px auto;
+    background-size: cover;
+}
+.btn-capacete{background: url('../img/painel_btn_1.png') no-repeat center;}
+.btn-oculos{background: url('../img/painel_btn_2.png') no-repeat center;}
+.btn-auditivo{background: url('../img/painel_btn_3.png') no-repeat center;}
+.btn-luvas{background: url('../img/painel_btn_4.png') no-repeat center;}
+.btn-roupa{background: url('../img/painel_btn_5.png') no-repeat center;}
+.btn-calcados{background: url('../img/painel_btn_6.png') no-repeat center;}
+
+.visto{
+    background-size: 110% !important;
+    border: #02a799 solid 8px !important;
+}
+
+.linhas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+.linha {
+    stroke: #FF868B;
+    stroke-width: 3;
+}
+
+
+.painel-EPCs{
+    width: 840px;
+    height: 740px;
+    margin: 50px auto;
+    background: url('../img/painel_clicavel_2.png') no-repeat top center;
+    background-size: contain;
+    position: relative;
+}
+.painel-EPCs span{
+    background: transparent;
+    border: #93abcd solid 5px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    display: none;
+}
+.circulo-barreiras{
+    left: 300px;
+    top: 340px;
+    width: 110px;
+    height: 110px;
+}
+.circulo-ventilacao{
+    width: 100px;
+    height: 100px;
+    left: 165px;
+}
+.circulo-sinalizacao{
+    right: 40px;
+    top: 195px;
+    width: 60px;
+    height: 60px;
+}
+.circulo-dispositivos{
+    width: 150px;
+    height: 150px;
+    left: 350px;
+    top: 150px;
+}
+.circulo-alarme{
+    right: 5px;
+    top: 270px;
+    width: 55px;
+    height: 55px;
+}
+
+.btn-EPCs{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+}
+.btn-EPCs button{
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 820px){
+    .bg-gradiente_azul, .bg-gradiente_azul_01, .bg-gradiente_azul_02, .bg-gradiente_azul_03{
+        background: linear-gradient(135deg, #ffffff 0%, #c0d8f5 100%);
+    }
+
+    .bloco.bg-imagem{
+        min-height: 200px;
+    }
+
+    .painel-EPCs{
+        transform: scale(0.85);
+        margin: -30px -65px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .bloco.bg-imagem{
+        display: none;
+    }
+    
+    .painel-EPIs, .painel-EPCs{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    .painel-EPCs span{
+        display: none !important;
+    }
+    .btn-EPCs{
+        position: relative;
+        height: auto;
+    }
+    .btn-EPCs button{
+        padding: 10px 20px;
+    }
+    
+}
